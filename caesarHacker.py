@@ -1,8 +1,9 @@
 #Caesar Chipher Hacker
 #https://nostarch.com/crackingcodes (BSD Licensed)
 
-message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
-SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
+#message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
+message = input('Enter encrypted message: ')
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.`~@#$%^&*()+-=[]{}|;:<>,/'
 
 #loop through every possible key
 
@@ -21,12 +22,13 @@ for key in range(len(SYMBOLS)):
                 translatedIndex = translatedIndex + len(SYMBOLS)
 
                 #Append decrypted symbol:
-                translated = translated + SYMBOLS[translatedIndex]
+            translated = translated + SYMBOLS[translatedIndex]
 
-            else:
-                #Append with out encrypting/decrypting:
-                translated = translated + symbol
+        else:
+            #Append with out encrypting/decrypting:
+            translated = translated + symbol
 
     #Display every possible decryption
-    print('Keys #%s: %s' % (key, translated))
+    print('Keys #%s: %s\n\n' % (key, translated))
+
 

@@ -4,15 +4,15 @@
 import pyperclip
 
 #This is the string to be encrypted/decrypted
-message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
-
+# message = 'This<is<my<secret<message/'
+message = input('Enter message: ')
 #The encryption / Decryption key
 
-key = 13
-
+#key = 13
+key = int(input('Enter key to use: '))
 #Wheather the program  encrypts or decrypts.
-mode = 'decrypt' #set to either encrypt or decrypt
-
+#mode = 'decrypt' #set to either encrypt or decrypt
+mode = input("Type Decrypt or encrypt: ")
 #Every posible symbol that can be encrypted:
 
 SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.`~@#$%^&*()+-=[]{}|;:<>,/'
