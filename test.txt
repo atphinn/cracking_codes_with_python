@@ -1,0 +1,7 @@
+Triad  for background, triad is just a sales agency, they sell plas to brands and then manage those campaigns on behalf of the brands in the platform. really they're more like a brand than they are like office depot
+
+at least for how they utilize the platform
+ a little bit different, but still cross targeting is something that is exclusively controlled on the retailer side. like if I’m group m and one of my brands is HP yea i can say I want to cross target into other targets outside of computers or whatever but i shouldn’t really be able to be able to control exactly where i show on a retailer website.
+
+
+ cross targeting protocol does not include the browse in-grid slot, it is only applicable for the other slots. In-grid ads are set to the most granular match which is a configuration dictated by Office Depot. If however the SKU you mentioned should actually have "gaming chairs" as part of its organic taxonomy, that is a change that we would have to work with the Office Depot data team to fix within the product feed.

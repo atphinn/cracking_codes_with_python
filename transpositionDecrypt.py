@@ -5,10 +5,10 @@
 import math, pyperclip
 
 def main():
-    # myMessage = "Cenoonommstmme oo snnio. s s c"
-    myMessage = input('Enter in devrypted message: ')
-    # myKey = 8
-    myKey = int(input('Enter in key: '))
+    myMessage = "Cenoonommstmme oo snnio. s s c"
+    #myMessage = input('Enter in decrypted message: ')
+    myKey = 8
+    #myKey = int(input('Enter in key: '))
     plaintext = decryptMessage(myKey, myMessage)
 
     #print with a | (called "pipe" character) after it in case there are spaces at the end of the decrypted message

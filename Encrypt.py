@@ -4,8 +4,10 @@
 import pyperclip
 
 def main():
-    myMessage = input('Enter a message: ')#Common sense is not so common.'
-    myKey = input('Enter a key: ') #8
+    #myMessage = input('Enter a message: ')#Common sense is not so common.'
+    myMessage = 'Common sense is not so common.'
+    # myKey = int(input('Enter a key: ')) #8
+    myKey = 8
 
     ciphertext = encryptMessage(myKey, myMessage)
 

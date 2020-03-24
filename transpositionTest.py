@@ -3,13 +3,13 @@
 
 import random, sys, Encrypt, transpositionDecrypt
 
-
 def main():
     random.seed(42) #set the random "seed" to a staic value
 
-    for i in range(20):
+    for i in range(20):#run 20 test
+
         #Generate random messages to test. The message will have a random length:
-        message = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' * random.randrange(4, 40)
+        message = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' * random.randint(4, 40)
 
         #Convert the message string to a list to shuffle
         message = list(message)
@@ -17,8 +17,8 @@ def main():
         message = ''.join(message) #convert list back to string
         print('Test #%s: "%s..."' % (i + 1, message[:50]))
 
-        #Check all possible keys for each message:
-        for key in range(1, int(len(message)/2)):
+        #Check all possible keys for each mes sage:
+        for key in range(1, int(len(message) / 2)):
             encrypted = Encrypt.encryptMessage(key, message)
             decrypted = transpositionDecrypt.decryptMessage(key, encrypted)
 
