@@ -7,13 +7,13 @@ LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def main():
     
-    #myMessage = """Alan Mathison Turing was a British mathematician, logician, cryptanalyst, and computer scientist."""
+    myMessage = """Alan Mathison Turing was a British mathematician, logician, cryptanalyst, and computer scientist."""
     #myMessage = "Adiz Avtzqeci Tmzubb wsa m Pmilqev halpqavtakuoi, lgouqdaf, kdmktsvmztsl, izr xoexghzr kkusitaaf."
-    myMessage = input('Enter message to de/encrypt: ')
-    #myKey = 'ASIMOV'
-    myKey = input('In put 6 string key: ')
-    #myMode = 'decrypt' #set to either 'encrypt' or 'decrypt'
-    myMode = input('''set to either 'encrypt' or 'decrypt: ''')
+    #myMessage = input('Enter message to de/encrypt: ')
+    myKey = 'ASIMOV'
+    #myKey = input('In put 6 string key: ')
+    myMode = 'encrypt' #set to either 'encrypt' or 'decrypt'
+    #myMode = input('''set to either 'encrypt' or 'decrypt: ''')
     
     if myMode == 'encrypt':
         translated = encryptMessage(myKey, myMessage)
@@ -25,7 +25,7 @@ def main():
     print(translated)
     pyperclip.copy(translated)
     print()
-    print('The message hase been copied to the clipboard.')
+    print('The message has been copied to the clipboard.')
     
     
 def encryptMessage(key, message):
